@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Demotext</title>
+    <style>
+        #demo {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="demotext">
+        <h1>Demo text</h1>
+    </div>
+
+    <script>
+        var div1=document.getElementById('demotext');
+        div1.addEventListener('click',function(){
+            this.innerHTML='<h1>I got clicked</h1>';
+            this.style.backgroundColor='pink';
+        });
+
+    </script>
+</body>
+</html>

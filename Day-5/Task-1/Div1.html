@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Div1</title>
+</head>
+<body>
+    <div id="mainDiv" >
+        <p class="para">Hello!!</p>
+        <p class="para">I am Harika</p>
+    </div>
+
+    <script>
+        var mainDiv = document.getElementById('mainDiv');
+    mainDiv.style.color = 'red';
+
+  var paras = document.querySelectorAll('.para');
+    paras.forEach(function(para) {
+        para.style.color = 'red';
+    });
+
+    </script>
+</body>
+</html>

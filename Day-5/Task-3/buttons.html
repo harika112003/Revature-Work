@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <p id="val">0</p>
+    <button id="inc">Increment by 1</button>
+    <button id="dec">Decrement by 1</button>
+
+    <script>
+     
+     var val=document.getElementById("val");
+
+     inc.addEventListener('click',function(){
+      var cval=parseInt(val.textContent);
+      val.textContent=cval+1;
+     })
+
+     dec.addEventListener('click',function(){
+        val.textContent=val.textContent-1;
+       })
+    
+    </script>
+</body>
+</html>

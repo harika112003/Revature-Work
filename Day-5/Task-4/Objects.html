@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Print Names Example</title>
+</head>
+<body>
+
+<div id="output"></div>
+<button onclick="printNames()">Print Names</button>
+
+<script>
+    var users = [
+        { name: 'Harika', city: 'Kakinada', age: 20 },
+        { name: 'abc', city: 'Kakinada', age: 25 },
+        { name: 'abc1', city: 'Kakinada', age: 35 }
+    ];
+
+    function printNames() {
+        var outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = ''; 
+
+        users.forEach(function(user) {
+            var nameHeader = document.createElement('h1');
+            nameHeader.textContent = user.name;
+            outputDiv.appendChild(nameHeader);
+        });
+    }
+</script>
+
+</body>
+</html>
